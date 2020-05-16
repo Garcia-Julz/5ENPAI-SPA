@@ -27,7 +27,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') 5ENPAI
+                img.navbar-brand.js-scroll-trigger.logo-nav(src='assets/img/5ENPAI_Logo_Large.jpg', href='#page-top' style='width: 15%')
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
@@ -53,7 +53,7 @@ html(lang='en')
             .container
                 .row
                     .col-lg-8.mx-auto
-                        h2.text-white.mb-4 Made with your privacy in mind
+                        h2.text-white.mb-4 Made with privacy in mind
                         p.text-white-50
                             | 5ENPAI is a consultant service in which we give users privacy of purchasing products, without the thought of knowing your purchases are being traced back to you by marketers in
                             a(href='http://amazon.com')  Amazon
@@ -104,10 +104,9 @@ html(lang='en')
                     .col-md-10.col-lg-8.mx-auto.text-center
                         i.far.fa-paper-plane.fa-2x.mb-2.text-white
                         h2.text-white.mb-5 Join our early access list and say 'Goodbye' those pesky marketers 🕵🏻‍♂️!
-                        form#mc-embedded-subscribe-form.validate(action='https://5ENPAI.us18.list-manage.com/subscribe/post?u=e36a13b76e5c6c5d46d70968d&id=e753655590' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
-                            label(for='mce-EMAIL')
-                            input.form-control.flex-fill.mr-0.mr-sm-2.mb-3.mb-sm-0(type='email', placeholder='Enter email address...' id='mce-EMAIL inputEmail' value='' name='EMAIL')
-                            button#mc-embedded-subscribe.button.btn.btn-primary.mx-auto(type='submit' value='Subscribe' name='subscribe') Subscribe
+                        form#mc-embedded-subscribe-form.validate.form-inline.d-flexform(action='https://5ENPAI.us18.list-manage.com/subscribe/post?u=e36a13b76e5c6c5d46d70968d&id=e753655590' method='post' name='mc-embedded-subscribe-form' novalidate='')
+                            input#inputEmail.form-control.flex-fill.mr-0.mr-sm-2.mb-3.mb-sm-0(type='email', placeholder='Enter email address...')
+                            button.btn.btn-primary.mx-auto(type='submit') Subscribe
 
         // Contact
         section.contact-section.bg-black
@@ -156,10 +155,6 @@ html(lang='en')
 
         // Third party plugin JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
-
-        // MailChimp JS
-        script(type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
-        script(type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true)
 
         // Core theme JS
         script(src='js/scripts.js')
