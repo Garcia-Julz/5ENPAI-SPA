@@ -204,6 +204,7 @@ img {
 svg {
   overflow: hidden;
   vertical-align: middle;
+  padding-left: 2px;
 }
 
 table {
@@ -10318,4 +10319,8 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+element.style {
+  padding-left: 2px;
 }
