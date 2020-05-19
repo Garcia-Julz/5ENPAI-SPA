@@ -10191,7 +10191,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(0, 123, 255, 0.9), rgba(245, 65, 192, 0.9));
+  background: linear-gradient(rgba(245, 65, 192, 0.9), rgba(0, 123, 255, 0.9));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
