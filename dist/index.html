@@ -106,9 +106,25 @@
                         <h2 class="text-white mb-5">
                             Join our early access list and say 'Goodbye' those pesky marketers 🕵🏻‍♂️
                         </h2>
-                        <form class="validate form-inline d-flexform" id="mc-embedded-subscribe-form" action="https://5ENPAI.us18.list-manage.com/subscribe/post?u=e36a13b76e5c6c5d46d70968d&amp;id=e753655590" method="post" name="mc-embedded-subscribe-form" novalidate="">
-                            <input class="form-control required email flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail mce-EMAIL" name="EMAIL" type="email" placeholder="Enter email address..." />
-                            <button class="btn btn-primary mx-auto" type="submit">
+                        <form 
+                        class="validate form-inline d-flexform" 
+                        action="https://5ENPAI.us18.list-manage.com/subscribe/post?u=e36a13b76e5c6c5d46d70968d&amp;id=e753655590"
+                        method="post" 
+                        name="mc-embedded-subscribe-form">
+                            <label for="country_code"></label>
+                            <input 
+                            class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" 
+                            id="inputEmail mce-EMAIL" 
+                            name="EMAIL" 
+                            type="email"
+                            placeholder="Enter email address..."
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <br>
+                            <button 
+                            class="btn btn-primary mx-auto mc-embedded-subscribe" 
+                            type="submit"
+                            value="Subscribe" 
+                            name="subscribe">
                                 Subscribe
                             </button>
                         </form>
